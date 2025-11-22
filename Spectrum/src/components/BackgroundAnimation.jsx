@@ -115,7 +115,7 @@ const BackgroundAnimation = () => {
       whiteSpace: 'nowrap',
       top: topPosition 
     }}>
-      <div style={{ display: 'flex', gap: '60px' }} className={animationClass}>
+      <div style={{ display: 'flex', gap: '50px' }} className={animationClass}>
         {children}
         {children}
       </div>
@@ -164,7 +164,7 @@ const BackgroundAnimation = () => {
 
       <div style={{
         position: 'absolute',
-        top: 100,
+        top:40,
         left: 0,
         width: '100%',
         height: '100%',
