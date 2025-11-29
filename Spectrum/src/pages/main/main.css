@@ -21,8 +21,8 @@ body {
     min-height: 100vh;
     text-align: center;
     position: relative;
-    z-index: 10;
-    padding-bottom: 50px;
+    z-index: 0;
+    padding-bottom: 0px;
 }
 
 .Main-Title span:nth-child(1) { color: #E9A5A5; opacity: 0.6; }
@@ -99,13 +99,129 @@ body {
     background: none;
     position: relative;
     z-index: 10;
+    padding: 4rem 2rem;
+    min-height: 100vh;
+    margin-top : 30rem;
 }
 
 .Introduction {
-    margin: 100px 0;
+    margin: 0 0 4rem 0;
     font-size: 3em;
     color: #494949;
     text-align: center;
+}
+
+/* Feature Cards */
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 6rem auto;
+    padding: 0 1rem;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.feature-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Info Section */
+.info-section {
+    max-width: 800px;
+    margin: 0 auto 6rem auto;
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, rgba(165, 220, 200, 0.2), rgba(181, 217, 244, 0.2));
+    border-radius: 1.5rem;
+}
+
+.info-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.info-text {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #f2b24b, #53c3c0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.cta-description {
+    font-size: 1.3rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Introduction {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .info-title, .cta-title {
+        font-size: 2rem;
+    }
+
+    .info-text, .cta-description {
+        font-size: 1rem;
+    }
 }
 
 

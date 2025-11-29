@@ -67,8 +67,56 @@ export default function Home() {
           </main>
 
       <section className = "section">
-        
+
         <h1 className = "Introduction">수업시간에 자주 나오는 원소들의 스펙트럼을 한 번에 !</h1>
+
+        <div className="feature-container">
+          <div className="feature-card">
+            <div className="feature-icon">🔬</div>
+            <h2 className="feature-title">103개 원소 스펙트럼</h2>
+            <p className="feature-description">
+              주기율표의 모든 원소들의 스펙트럼을 확인하고 학습할 수 있습니다.
+              각 원소의 고유한 빛의 파장을 시각적으로 탐구하세요.
+            </p>
+          </div>
+
+          <div className="feature-card">
+            <div className="feature-icon">📊</div>
+            <h2 className="feature-title">인터랙티브 주기율표</h2>
+            <p className="feature-description">
+              클릭 한 번으로 원소의 상세 정보와 스펙트럼 데이터를 확인하세요.
+              직관적인 UI로 쉽고 빠르게 원하는 정보를 찾을 수 있습니다.
+            </p>
+          </div>
+
+          <div className="feature-card">
+            <div className="feature-icon">💡</div>
+            <h2 className="feature-title">학습 최적화</h2>
+            <p className="feature-description">
+              수업시간에 자주 다루는 원소들을 중심으로 구성되어
+              효율적인 학습이 가능합니다.
+            </p>
+          </div>
+        </div>
+
+        <div className="info-section">
+          <h2 className="info-title">Spectrum이란?</h2>
+          <p className="info-text">
+            Spectrum은 화학 수업에서 다루는 원소들의 스펙트럼을
+            쉽고 빠르게 확인할 수 있는 교육용 플랫폼입니다.
+          </p>
+          <p className="info-text">
+            각 원소가 방출하는 고유한 빛의 파장을 시각화하여,
+            학생들의 이해를 돕고 학습 효율을 높입니다.
+          </p>
+        </div>
+
+        <div className="cta-section">
+          <h2 className="cta-title">지금 바로 시작하세요!</h2>
+          <p className="cta-description">
+            BSM 계정으로 로그인하고 원소의 세계를 탐험해보세요
+          </p>
+        </div>
       
 
         <div className="Introduction1">

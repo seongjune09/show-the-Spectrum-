@@ -182,9 +182,6 @@ const BackgroundAnimation = () => {
         <AnimatedRow topPosition="200px" animationClass="scroll-left-45">
           {createElementRow(2)}
         </AnimatedRow>
-        <AnimatedRow topPosition="800px" animationClass="scroll-left-45">
-          {createElementRow(3)}
-        </AnimatedRow>
       </div>
     </>
   );
