@@ -1,0 +1,68 @@
+* Info Section */
+.info-section {
+    max-width: 800px;
+    margin: 0 auto 6rem auto;
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, rgba(165, 220, 200, 0.2), rgba(181, 217, 244, 0.2));
+    border-radius: 1.5rem;
+}
+
+.info-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.info-text {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.cta-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #f2b24b, #53c3c0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.cta-description {
+    font-size: 1.3rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Introduction {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .info-title, .cta-title {
+        font-size: 2rem;
+    }
+
+    .info-text, .cta-description {
+        font-size: 1rem;
+    }
+}
