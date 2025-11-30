@@ -1,6 +1,7 @@
 import "./main.css";
 import "./section.css";
 import "./intro.css";
+import "./feature.css";
 import "./end.css";
 import { useNavigate } from "react-router-dom";
 import BackgroundAnimation from "../../components/BackgroundAnimation";
@@ -40,6 +41,9 @@ export default function Home() {
             </button>
           </main>
 
+
+
+      {/* 간단한 기능 소개 */}
       <section className = "section">
 
         <h1 className = "Introduction">보여줄게 스펙트럼을 소개합니다 !</h1>
@@ -65,6 +69,8 @@ export default function Home() {
         </div>
 
 
+
+        {/* 기능 상세 소개 */}
         <div className="feature-container">
           <div className="feature-card">
             <img className="Spectrum-icon" src="Main-Logo.svg"></img>
@@ -94,6 +100,9 @@ export default function Home() {
           </div>
         </div>
 
+
+
+        {/* 마무리 소개 */}
         <div className="info-section">
           <h2 className="info-title">Spectrum이란?</h2>
           <p className="info-text">

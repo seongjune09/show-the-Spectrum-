@@ -1,19 +1,4 @@
-.Spectrum-icon{
-    margin-right : 2rem;
-    margin-bottom : 3rem;
-}
-
-.Quiz-icon {
-    width : 8rem;
-    margin-bottom : 4rem;
-}
-
-.Ranking-icon {
-    width : 18rem;
-    margin-bottom : 1rem;
-}
-
-.intro-container {
+.feature-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -22,7 +7,7 @@
     padding: 0 1rem;
 }
 
-.intro-card {
+.feature-card {
     background: rgba(255, 255, 255, 0.8);
     border-radius: 1rem;
     padding: 2.5rem 2rem;
@@ -31,24 +16,24 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.intro-card:hover {
+.feature-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
-.intro-icon {
+.feature-icon {
     font-size: 4rem;
     margin-bottom: 1rem;
 }
 
-.intro-title {
-    font-size: 2rem;
-    color: #747474;
+.feature-title {
+    font-size: 1.5rem;
+    color: #333;
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
-.intro-description {
+.feature-description {
     font-size: 1rem;
     color: #666;
     line-height: 1.6;
