@@ -1,3 +1,40 @@
+
+.info-section {
+    max-width: 1000px;
+    margin: 0 auto 6rem auto;
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, #71d3af33, #b5d9f433);
+    border-radius: 1.5rem;
+}
+
+.info-title {
+    font-size: 3.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.info-text {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    text-align :  left;
+    padding-left : 4rem;
+}
+
+.info-title span:nth-child(1) { color: #E9A5A5; opacity: 0.6; }
+.info-title span:nth-child(2) { color: #E9D4A6; opacity: 0.65; }
+.info-title span:nth-child(3) { color: #A5DCC8; opacity: 0.7; }
+.info-title span:nth-child(4) { color: #B5D9F4; opacity: 0.75; }
+.info-title span:nth-child(5) { color: #F4B5E0; opacity: 1; }
+.info-title span:nth-child(6) { color: #C5AAD9; opacity: 1; }
+.info-title span:nth-child(7) { color: #a9a9a9; opacity: 1; }
+
+
+
+
 .Spectrum-icon{
     margin-right : 2rem;
     margin-bottom : 3rem;
