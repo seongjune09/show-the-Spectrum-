@@ -1,11 +1,11 @@
-.cta-section {
+.end-section {
     text-align: center;
     padding: 4rem 2rem;
     max-width: 800px;
     margin: 0 auto;
 }
 
-.cta-title {
+.end-title {
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 1rem;
@@ -16,10 +16,47 @@
     color: transparent;
 }
 
-.cta-description {
+.end-description {
     font-size: 1.3rem;
     color: #666;
     margin: 0;
+}
+
+.Login-Btn1 {
+    background-color: transparent;
+    border: 0.125rem solid #ffffff; 
+    cursor: pointer;
+    height: 3.825rem; 
+    font-size: 1.5rem; 
+    border-radius: 0.5rem; 
+    padding: 0 1.8rem; 
+    transition: all 0.3s ease;
+    border : 0.125rem solid #A5DCC8;
+    color : #666;
+    margin-top : 3rem;
+    animation: rainbow-border1 8s linear infinite;
+}
+
+
+.Login-Btn1 span:nth-child(1) { 
+    color: #f5313f; 
+    opacity: 0.6; 
+    font-weight: 1000; 
+}
+
+.Login-Btn1 span:nth-child(2) { 
+    color: #0b71cf; 
+    opacity: 0.65; 
+    font-weight: 1000; 
+}
+
+.Login-Btn1:hover {  
+    box-shadow: 0 0.5rem 0.625rem rgba(0, 0, 0, 0.1); 
+    transform: translateY(-0.125rem); 
+}
+
+.Login-Btn1:active {
+    transform: translateY(-0.375rem); 
 }
 
 /* Responsive Design */
@@ -34,11 +71,11 @@
         gap: 1.5rem;
     }
 
-    .info-title, .cta-title {
+    .info-title, .end-title {
         font-size: 2rem;
     }
 
-    .info-text, .cta-description {
+    .info-text, .end-description {
         font-size: 1rem;
     }
 }

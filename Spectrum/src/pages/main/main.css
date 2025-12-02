@@ -44,7 +44,6 @@ body {
     padding: 0 1.8rem; 
     transition: all 0.3s ease;
     border : 0.125rem solid #A5DCC8;
-
     animation: rainbow-border 8s linear infinite;
 }
 

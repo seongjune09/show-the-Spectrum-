@@ -151,11 +151,15 @@ export default function Home() {
 
 
         {/* 마무리 소개 */}
-        <div className="cta-section">
-          <h2 className="cta-title">지금 바로 시작하세요!</h2>
-          <p className="cta-description">
-            BSM 계정으로 로그인하고 원소의 세계를 탐험해보세요
-          </p>
+        <div className="end-section">
+          <h2 className="end-title">지금 바로 시작하세요!</h2>
+          <p className="end-description"> BSM 계정으로 간편하게 로그인하고 스펙트럼 퀴즈를 풀어봅시다 !</p>
+          <button className = "Login-Btn1" onClick={() => {window.scrollTo({ top: 0, behavior: 'smooth' });
+          setTimeout(() => 1200);
+          }}>
+            <span>B</span>
+            <span>S</span>
+            <span className="M">M </span>로그인하러가기</button>
         </div>
 
 
