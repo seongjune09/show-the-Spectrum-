@@ -20,16 +20,40 @@
     
     <mask id="absorptionMask">
       <rect x="30" y="0" width="390" height="100" fill="white"/>
-      <rect x="87.1" y="0" width="2" height="100" fill="black"/>
+      <rect x="50.1" y="0" width="2" height="100" fill="black"/>
+      <rect x="55" y="0" width="2" height="100" fill="black"/>
+      <rect x="60" y="0" width="2" height="100" fill="black"/>
+      <rect x="65" y="0" width="2" height="100" fill="black"/>
+      <rect x="70" y="0" width="2" height="100" fill="black"/>
+      <rect x="80" y="0" width="2" height="100" fill="black"/>
+
       <rect x="110.9" y="0" width="2" height="100" fill="black"/>
-      <rect x="159.7" y="0" width="2" height="100" fill="black"/>
-      <rect x="247.4" y="0" width="2" height="100" fill="black"/>
+      <rect x="120" y="0" width="2" height="100" fill="black"/>
+      <rect x="125" y="0" width="2" height="100" fill="black"/>
+      <rect x="140" y="0" width="6" height="100" fill="black"/>
+      <rect x="145" y="0" width="2" height="100" fill="black"/>
+
+          
+      <rect x="210" y="0" width="2" height="100" fill="black"/>
+      <rect x="205" y="0" width="2" height="100" fill="black"/>
+      <rect x="270" y="0" width="2" height="100" fill="black"/>
+      <rect x="275" y="0" width="2" height="100" fill="black"/>
+      <rect x="320" y="0" width="2" height="100" fill="black"/>
+      <rect x="325" y="0" width="2" height="100" fill="black"/>
+      <rect x="330" y="0" width="2" height="100" fill="black"/>
+      <rect x="340" y="0" width="2" height="100" fill="black"/>
+
+      <rect x="370" y="0" width="2" height="100" fill="black"/>
+      <rect x="375" y="0" width="2" height="100" fill="black"/>
+      <rect x="385" y="0" width="2" height="100" fill="black"/>
+      <rect x="390" y="0" width="2" height="100" fill="black"/>
+      <rect x="400" y="0" width="2" height="100" fill="black"/>
     </mask>
   </defs>
   
   <rect width="450" height="165" fill="#F8F8F8"/>
   
-  <text x="30" y="30" font-size="14" font-weight="bold" fill="#333" font-family="Arial, sans-serif">
+  <text x="30" y="40" font-size="14" font-weight="bold" fill="#333" font-family="Arial, sans-serif">
     질소 흡수 스펙트럼
   </text>
   
@@ -37,16 +61,40 @@
   <rect x="30" y="45" width="390" height="40" fill="url(#edgeDarkening)"/>
   <rect x="30" y="45" width="390" height="40" fill="none" stroke="#CCC" stroke-width="1.5"/>
   
-  <text x="30" y="105" font-size="14" font-weight="bold" fill="#333" font-family="Arial, sans-serif">
+  <text x="30" y="115" font-size="14" font-weight="bold" fill="#333" font-family="Arial, sans-serif">
     질소 방출 스펙트럼
   </text>
   
   <rect x="30" y="120" width="390" height="40" fill="#1A1A1A" stroke="#CCC" stroke-width="1.5"/>
   
-  <rect x="87.1" y="120" width="2" height="40" fill="#D19FE8"/>
+  <!-- 방출선들 - 흡수선과 동일한 위치 -->
+  <rect x="50.1" y="120" width="2" height="40" fill="#D19FE8"/>
+  <rect x="55" y="120" width="2" height="40" fill="#D19FE8"/>
+  <rect x="60" y="120" width="2" height="40" fill="#D19FE8"/>
+  <rect x="65" y="120" width="2" height="40" fill="#D19FE8"/>
+  <rect x="70" y="120" width="2" height="40" fill="#C8B5E5"/>
+  <rect x="80" y="120" width="2" height="40" fill="#B0BBDF"/>
+  
   <rect x="110.9" y="120" width="2" height="40" fill="#88CCFF"/>
-  <rect x="159.7" y="120" width="2" height="40" fill="#9FD8D0"/>
-  <rect x="247.4" y="120" width="2" height="40" fill="#88FFAA"/>
+  <rect x="120" y="120" width="2" height="40" fill="#88CCFF"/>
+  <rect x="125" y="120" width="2" height="40" fill="#88CCFF"/>
+  <rect x="140" y="120" width="6" height="40" fill="#88CCFF"/>
+  <rect x="145" y="120" width="2" height="40" fill="#88DDEE"/>
+  
+  <rect x="205" y="120" width="2" height="40" fill="#88FFAA"/>
+  <rect x="210" y="120" width="2" height="40" fill="#88FFAA"/>
+  <rect x="270" y="120" width="2" height="40" fill="#D4FF88"/>
+  <rect x="275" y="120" width="2" height="40" fill="#EEFF88"/>
+  <rect x="320" y="120" width="2" height="40" fill="#FFBD88"/>
+  <rect x="325" y="120" width="2" height="40" fill="#FFBD88"/>
+  <rect x="330" y="120" width="2" height="40" fill="#FFBD88"/>
+  <rect x="340" y="120" width="2" height="40" fill="#FFB088"/>
+  
+  <rect x="370" y="120" width="2" height="40" fill="#FFBD88"/>
+  <rect x="375" y="120" width="2" height="40" fill="#FFA088"/>
+  <rect x="385" y="120" width="2" height="40" fill="#FF8B94"/>
+  <rect x="390" y="120" width="2" height="40" fill="#FF8B94"/>
+  <rect x="400" y="120" width="2" height="40" fill="#FF8B94"/>
   
   <rect x="30" y="120" width="390" height="40" fill="url(#edgeDarkening)"/>
 

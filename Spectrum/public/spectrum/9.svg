@@ -20,15 +20,27 @@
     
     <mask id="absorptionMask">
       <rect x="30" y="0" width="390" height="100" fill="white"/>
-      <rect x="133.0" y="0" width="2" height="100" fill="black"/>
-      <rect x="191.5" y="0" width="2" height="100" fill="black"/>
-      <rect x="399.5" y="0" width="2" height="100" fill="black"/>
+      
+      <!-- 주황/빨간색 영역 - 많은 선들 -->
+      <rect x="305" y="0" width="0.5" height="100" fill="black"/>
+      <rect x="310" y="0" width="0.5" height="100" fill="black"/>
+      <rect x="320" y="0" width="1.5" height="100" fill="black"/>
+      <rect x="330" y="0" width="3" height="100" fill="black"/>
+      <rect x="337" y="0" width="1.5" height="100" fill="black"/>
+      <rect x="365" y="0" width="2" height="100" fill="black"/>
+      <rect x="372" y="0" width="2" height="100" fill="black"/>
+      <rect x="378" y="0" width="4" height="100" fill="black"/>
+      <rect x="385" y="0" width="2" height="100" fill="black"/>
+      <rect x="392" y="0" width="2" height="100" fill="black"/>
+      <rect x="399" y="0" width="2.5" height="100" fill="black"/>
+      <rect x="407" y="0" width="2" height="100" fill="black"/>
+      <rect x="413" y="0" width="2" height="100" fill="black"/>
     </mask>
   </defs>
   
   <rect width="450" height="165" fill="#F8F8F8"/>
   
-  <text x="30" y="30" font-size="14" font-weight="bold" fill="#333" font-family="Arial, sans-serif">
+  <text x="30" y="40" font-size="14" font-weight="bold" fill="#333" font-family="Arial, sans-serif">
     플루오린 흡수 스펙트럼
   </text>
   
@@ -36,15 +48,27 @@
   <rect x="30" y="45" width="390" height="40" fill="url(#edgeDarkening)"/>
   <rect x="30" y="45" width="390" height="40" fill="none" stroke="#CCC" stroke-width="1.5"/>
   
-  <text x="30" y="105" font-size="14" font-weight="bold" fill="#333" font-family="Arial, sans-serif">
+  <text x="30" y="115" font-size="14" font-weight="bold" fill="#333" font-family="Arial, sans-serif">
     플루오린 방출 스펙트럼
   </text>
   
   <rect x="30" y="120" width="390" height="40" fill="#1A1A1A" stroke="#CCC" stroke-width="1.5"/>
   
-  <rect x="133.0" y="120" width="2" height="40" fill="#9FD8D0"/>
-  <rect x="191.5" y="120" width="2" height="40" fill="#9FD8D0"/>
-  <rect x="399.5" y="120" width="2" height="40" fill="#FF8B94"/>
+  <!-- 방출선들 - 흡수선과 동일한 위치 -->
+  <!-- 주황/빨간색 영역 - 많은 선들 -->
+  <rect x="305" y="120" width="0.5" height="40" fill="#FFBD88"/>
+  <rect x="310" y="120" width="0.5" height="40" fill="#FFBD88"/>
+  <rect x="320" y="120" width="1.5" height="40" fill="#FFB088"/>
+  <rect x="330" y="120" width="3" height="40" fill="#FFA588"/>
+  <rect x="337" y="120" width="1.5" height="40" fill="#FFA088"/>
+  <rect x="365" y="120" width="2" height="40" fill="#FF9292"/>
+  <rect x="372" y="120" width="2" height="40" fill="#FF8E92"/>
+  <rect x="378" y="120" width="4" height="40" fill="#FF8B94"/>
+  <rect x="385" y="120" width="2" height="40" fill="#FF8B94"/>
+  <rect x="392" y="120" width="2" height="40" fill="#FF8B94"/>
+  <rect x="399" y="120" width="2.5" height="40" fill="#FF8B94"/>
+  <rect x="407" y="120" width="2" height="40" fill="#FF8594"/>
+  <rect x="413" y="120" width="2" height="40" fill="#FF8094"/>
   
   <rect x="30" y="120" width="390" height="40" fill="url(#edgeDarkening)"/>
 

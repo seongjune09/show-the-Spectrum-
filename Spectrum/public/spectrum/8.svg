@@ -20,16 +20,51 @@
     
     <mask id="absorptionMask">
       <rect x="30" y="0" width="390" height="100" fill="white"/>
-      <rect x="76.8" y="0" width="2" height="100" fill="black"/>
-      <rect x="234.4" y="0" width="2" height="100" fill="black"/>
-      <rect x="308.5" y="0" width="2" height="100" fill="black"/>
-      <rect x="347.5" y="0" width="2" height="100" fill="black"/>
+      <!-- 보라색 영역 -->
+      <rect x="45" y="0" width="1.5" height="100" fill="black"/>
+      <rect x="50" y="0" width="1.5" height="100" fill="black"/>
+      <rect x="55" y="0" width="1.5" height="100" fill="black"/>
+      <rect x="62" y="0" width="1.5" height="100" fill="black"/>
+      <rect x="68" y="0" width="1.5" height="100" fill="black"/>
+      <rect x="76" y="0" width="2" height="100" fill="black"/>
+      
+      <!-- 파란색 영역 -->
+      <rect x="95" y="0" width="1.5" height="100" fill="black"/>
+      <rect x="100" y="0" width="2" height="100" fill="black"/>
+      <rect x="115" y="0" width="2.5" height="100" fill="black"/>
+      <rect x="120" y="0" width="2" height="100" fill="black"/>
+      <rect x="125" y="0" width="1.5" height="100" fill="black"/>
+      
+      <!-- 청록색/녹색 영역 -->
+      <rect x="160" y="0" width="2" height="100" fill="black"/>
+      <rect x="165" y="0" width="2.5" height="100" fill="black"/>
+      <rect x="200" y="0" width="2" height="100" fill="black"/>
+      <rect x="205" y="0" width="3" height="100" fill="black"/>
+      <rect x="210" y="0" width="2.5" height="100" fill="black"/>
+      <rect x="234" y="0" width="2.5" height="100" fill="black"/>
+      
+      <!-- 노란색 영역 -->
+      <rect x="285" y="0" width="2" height="100" fill="black"/>
+      <rect x="289" y="0" width="2" height="100" fill="black"/>
+      <rect x="295" y="0" width="2" height="100" fill="black"/>
+      
+      <!-- 주황색 영역 -->
+      <rect x="308" y="0" width="2.5" height="100" fill="black"/>
+      <rect x="320" y="0" width="2" height="100" fill="black"/>
+      <rect x="340" y="0" width="2" height="100" fill="black"/>
+      <rect x="347" y="0" width="2.5" height="100" fill="black"/>
+      
+      <!-- 빨간색 영역 -->
+      <rect x="365" y="0" width="2" height="100" fill="black"/>
+      <rect x="378" y="0" width="2" height="100" fill="black"/>
+      <rect x="390" y="0" width="2.5" height="100" fill="black"/>
+      <rect x="405" y="0" width="2" height="100" fill="black"/>
     </mask>
   </defs>
   
   <rect width="450" height="165" fill="#F8F8F8"/>
   
-  <text x="30" y="30" font-size="14" font-weight="bold" fill="#333" font-family="Arial, sans-serif">
+  <text x="30" y="40" font-size="14" font-weight="bold" fill="#333" font-family="Arial, sans-serif">
     산소 흡수 스펙트럼
   </text>
   
@@ -37,16 +72,52 @@
   <rect x="30" y="45" width="390" height="40" fill="url(#edgeDarkening)"/>
   <rect x="30" y="45" width="390" height="40" fill="none" stroke="#CCC" stroke-width="1.5"/>
   
-  <text x="30" y="105" font-size="14" font-weight="bold" fill="#333" font-family="Arial, sans-serif">
+  <text x="30" y="115" font-size="14" font-weight="bold" fill="#333" font-family="Arial, sans-serif">
     산소 방출 스펙트럼
   </text>
   
   <rect x="30" y="120" width="390" height="40" fill="#1A1A1A" stroke="#CCC" stroke-width="1.5"/>
   
-  <rect x="76.8" y="120" width="2" height="40" fill="#D19FE8"/>
-  <rect x="234.4" y="120" width="2" height="40" fill="#88FFAA"/>
-  <rect x="308.5" y="120" width="2" height="40" fill="#FFBD88"/>
-  <rect x="347.5" y="120" width="2" height="40" fill="#FFBD88"/>
+  <!-- 방출선들 - 흡수선과 동일한 위치 -->
+  <!-- 보라색 영역 -->
+  <rect x="45" y="120" width="1.5" height="40" fill="#D19FE8"/>
+  <rect x="50" y="120" width="1.5" height="40" fill="#D19FE8"/>
+  <rect x="55" y="120" width="1.5" height="40" fill="#D19FE8"/>
+  <rect x="62" y="120" width="1.5" height="40" fill="#D19FE8"/>
+  <rect x="68" y="120" width="1.5" height="40" fill="#C8B5E5"/>
+  <rect x="76" y="120" width="2" height="40" fill="#B0BBDF"/>
+  
+  <!-- 파란색 영역 -->
+  <rect x="95" y="120" width="1.5" height="40" fill="#88CCFF"/>
+  <rect x="100" y="120" width="2" height="40" fill="#88CCFF"/>
+  <rect x="115" y="120" width="2.5" height="40" fill="#88CCFF"/>
+  <rect x="120" y="120" width="2" height="40" fill="#88CCFF"/>
+  <rect x="125" y="120" width="1.5" height="40" fill="#88DDEE"/>
+  
+  <!-- 청록색/녹색 영역 -->
+  <rect x="160" y="120" width="2" height="40" fill="#88EECC"/>
+  <rect x="165" y="120" width="2.5" height="40" fill="#88FFAA"/>
+  <rect x="200" y="120" width="2" height="40" fill="#88FFAA"/>
+  <rect x="205" y="120" width="3" height="40" fill="#88FFAA"/>
+  <rect x="210" y="120" width="2.5" height="40" fill="#88FFAA"/>
+  <rect x="234" y="120" width="2.5" height="40" fill="#AAFF88"/>
+  
+  <!-- 노란색 영역 -->
+  <rect x="285" y="120" width="2" height="40" fill="#FFE888"/>
+  <rect x="289" y="120" width="2" height="40" fill="#FFE088"/>
+  <rect x="295" y="120" width="2" height="40" fill="#FFD888"/>
+  
+  <!-- 주황색 영역 -->
+  <rect x="308" y="120" width="2.5" height="40" fill="#FFBD88"/>
+  <rect x="320" y="120" width="2" height="40" fill="#FFBD88"/>
+  <rect x="340" y="120" width="2" height="40" fill="#FFB088"/>
+  <rect x="347" y="120" width="2.5" height="40" fill="#FFA588"/>
+  
+  <!-- 빨간색 영역 -->
+  <rect x="365" y="120" width="2" height="40" fill="#FF9B94"/>
+  <rect x="378" y="120" width="2" height="40" fill="#FF8B94"/>
+  <rect x="390" y="120" width="2.5" height="40" fill="#FF8B94"/>
+  <rect x="405" y="120" width="2" height="40" fill="#FF8B94"/>
   
   <rect x="30" y="120" width="390" height="40" fill="url(#edgeDarkening)"/>
 
