@@ -1,0 +1,19 @@
+.ranking-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.ranking-container h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.ranking-container p {
+  font-size: 1.5rem;
+}
