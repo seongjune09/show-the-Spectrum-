@@ -4,6 +4,16 @@ import "./PeriodicTable.css";
 export default function PeriodicTable() {
     const [selectedElement, setSelectedElement] = useState(null);
     const [isNoteModalOpen, setIsNoteModalOpen] = useState(false);
+    
+    const navigate = useNavigate()
+
+    const handleQuizClick = () => {
+        navigate('/quiz')
+    }
+
+    const handleRankingClick = () => {
+        navigate('ranking')
+    }
 
     const elements = [
         // Period 1
@@ -166,11 +176,11 @@ export default function PeriodicTable() {
 
             <div className = "icon-container">
                 <div className="icon-wrapper">
-                    <img className="quiz-icon" src="Quiz.svg" />
+                    <img className="quiz-icon" src="Quiz.svg" onClick={handleQuizClick}/>
                     <span className="tooltip">퀴즈 풀러가기</span>
                 </div>
                 <div className="icon-wrapper">
-                    <img className="ranking-icon" src="Ranking.png" />
+                    <img className="ranking-icon" src="Ranking.png" onClick={handleRankingClick} />
                     <span className="tooltip">랭킹 확인하기</span>
                 </div>
             </div>
