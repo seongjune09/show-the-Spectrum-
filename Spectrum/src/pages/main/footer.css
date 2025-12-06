@@ -1,8 +1,9 @@
 .footer {
-    padding-right : 40rem;
     background-color: #5A657726;
-    padding: 3rem 1rem;
+    padding: 3rem 0;
     color: #70798F;
+    margin: 0;
+    width: 100%;
 }
 
 .title {
@@ -11,7 +12,8 @@
 }
 
 .title-container {
-    padding : 0 0 5rem 15rem;
+    padding: 0 0 5rem 15rem;
+    margin: 0;
 }
 
 .ytube-icon {

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./PeriodicTable.css";
+import "../main/footer.css";
 
 export default function PeriodicTable() {
     const [selectedElement, setSelectedElement] = useState(null);
@@ -167,7 +168,8 @@ export default function PeriodicTable() {
     };
 
     return (
-        <div className="periodic-table-page">
+        <>
+            <div className="periodic-table-page">
             <h1 className="page-title">
                 <span>주</span>
                 <span>기</span>
@@ -270,6 +272,21 @@ export default function PeriodicTable() {
                     </div>
                 </div>
             )}
-        </div>
+            </div>
+
+            <footer className="footer">
+                <div className="title-container">
+                    <p className="title">(주)소마</p>
+                    <p>대표 : 박성준 ㅣ 사업자등록번호 : 1004-12-12345 ㅣ 이메일 : 25_27@bssm.hs.kr</p>
+                    <p>주소 : 부산광역시 강서구 가락대로 1393 ㅣ 우편번호 : 46708 ㅣ 고객센터 : 010-  </p>
+                    <a href="https://studio.youtube.com/channel/UCYoJiW-eDl2jmbxhiKeInPg/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D">
+                        <img className="ytube-icon" src="ytube.svg" alt="YouTube" />
+                    </a>
+                    <a href="https://github.com/seongjune09/show-the-Spectrum-">
+                        <img className="github-icon" src="github.svg" alt="GitHub" />
+                    </a>
+                </div>
+            </footer>
+        </>
     );
 }
