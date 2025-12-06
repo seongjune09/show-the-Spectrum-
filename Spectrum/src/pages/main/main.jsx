@@ -5,11 +5,41 @@ import "./feature.css";
 import "./end.css";
 import "./footer.css";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import BackgroundAnimation from "../../components/BackgroundAnimation";
 import { handleLogin } from "../../api/LoginApi/Login";
 
 export default function Home() {
     const navigate = useNavigate();
+
+    useEffect(() => {
+        // 페이지 로드 시 세션 확인
+        const checkSession = async () => {
+            try {
+                const response = await fetch('https://spectrum.blleaf.page/api/user', {
+                    method: 'GET',
+                    credentials: 'include',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    console.log('메인 페이지 세션 확인:', data);
+                    if (data.id && data.name) {
+                        // 로그인되어 있으면 주기율표로 이동
+                        console.log('로그인 상태 확인됨, 주기율표로 이동');
+                        navigate('/PeriodicTable');
+                    }
+                }
+            } catch (error) {
+                console.error('세션 확인 오류:', error);
+            }
+        };
+
+        checkSession();
+    }, [navigate]);
 
     const handleTestLogin = () => {
         navigate('/PeriodicTable');
