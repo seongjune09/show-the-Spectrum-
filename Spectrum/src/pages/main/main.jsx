@@ -161,7 +161,7 @@ export default function Home() {
 
               <div className="feature-card">
                   <div className="card-container">
-                    <img className="Ranking-icon1" src="Ranking.png" alt="Ranking Icon"></img>
+                    <img className="intro-ranking" src="intro-ranking.png" ></img>
                     <h2 className="feature-title">수소 매달의 주인공은 누구?</h2>
                   </div>
                   <div className="feature-content">
