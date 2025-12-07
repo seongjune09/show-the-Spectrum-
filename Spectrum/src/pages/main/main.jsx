@@ -42,7 +42,7 @@ export default function Home() {
     }, [navigate]);
 
     const handleTestLogin = () => {
-        navigate('/PeriodicTable');
+        navigate('/PeriodicTable?test=true');
     };
 
     return (

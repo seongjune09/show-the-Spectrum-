@@ -8,14 +8,14 @@ export default function Ranking() {
     // TODO: 실제 API에서 랭킹 데이터를 가져오는 로직으로 교체
     // 현재는 목(mock) 데이터 사용
     const mockData = [
-      { name: "김철수", score: 15 },
-      { name: "이영희", score: 12 },
-      { name: "박민수", score: 15 },
-      { name: "정지훈", score: 10 },
-      { name: "최유리", score: 12 },
-      { name: "강민호", score: 8 },
-      { name: "윤서연", score: 7 },
-      { name: "임동현", score: 6 },
+      { name: "", score: 0 },
+      { name: "", score: 0 },
+      { name: "", score: 0 },
+      { name: "", score: 0 },
+      { name: "", score: 0 },
+      { name: "", score: 0 },
+      { name: "", score: 0 },
+      { name: "", score: 0 },
     ];
 
     // 정렬: 점수 내림차순 -> 같은 점수면 이름 가나다순

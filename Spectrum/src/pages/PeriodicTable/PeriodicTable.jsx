@@ -1,13 +1,67 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import "./PeriodicTable.css";
 import "../main/footer.css";
 
 export default function PeriodicTable() {
     const [selectedElement, setSelectedElement] = useState(null);
     const [isNoteModalOpen, setIsNoteModalOpen] = useState(false);
-    
-    const navigate = useNavigate()
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
+
+    const navigate = useNavigate();
+    const [searchParams] = useSearchParams();
+
+    useEffect(() => {
+        // 테스트 모드인 경우 로그인 확인 건너뛰기
+        const isTestMode = searchParams.get('test') === 'true';
+
+        if (isTestMode) {
+            console.log('테스트 모드: 로그인 확인 건너뛰기');
+            setIsAuthenticated(true);
+            setIsLoading(false);
+            return;
+        }
+
+        // 페이지 로드 시 로그인 여부 확인
+        const checkAuth = async () => {
+            try {
+                const response = await fetch('https://spectrum.blleaf.page/api/user', {
+                    method: 'GET',
+                    credentials: 'include',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    console.log('주기율표 페이지 세션 확인:', data);
+
+                    if (data.id && data.name) {
+                        // 로그인되어 있음
+                        setIsAuthenticated(true);
+                    } else {
+                        // 로그인되지 않음 - 메인 페이지로 리다이렉트
+                        console.log('로그인되지 않음, 메인 페이지로 이동');
+                        navigate('/');
+                    }
+                } else {
+                    // API 호출 실패 - 메인 페이지로 리다이렉트
+                    console.log('인증 실패, 메인 페이지로 이동');
+                    navigate('/');
+                }
+            } catch (error) {
+                console.error('인증 확인 오류:', error);
+                // 오류 발생 시 메인 페이지로 리다이렉트
+                navigate('/');
+            } finally {
+                setIsLoading(false);
+            }
+        };
+
+        checkAuth();
+    }, [navigate, searchParams]);
 
     const handleQuizClick = () => {
         navigate('/quiz')
@@ -166,6 +220,22 @@ export default function PeriodicTable() {
     const closeNoteModal = () => {
         setIsNoteModalOpen(false);
     };
+
+    // 로딩 중이거나 인증되지 않은 경우 로딩 화면 표시
+    if (isLoading || !isAuthenticated) {
+        return (
+            <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: '100vh',
+                flexDirection: 'column',
+                gap: '20px'
+            }}>
+                <h2>로그인 확인 중...</h2>
+            </div>
+        );
+    }
 
     return (
         <>

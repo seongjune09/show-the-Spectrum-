@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './quiz.css';
 
 // 퀴즈 데이터
@@ -88,6 +89,7 @@ const quizData = {
 };
 
 export default function Quiz() {
+  const navigate = useNavigate();
   const [difficulty, setDifficulty] = useState(null);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
@@ -199,7 +201,7 @@ export default function Quiz() {
              "아쉽습니당 ㅠ.ㅠ"}
           </p>
           <div className="result-buttons">
-            <button className={`ranking-btn ${difficulty}`} onClick={() => selectDifficulty(difficulty)}>
+            <button className={`ranking-btn ${difficulty}`} onClick={() => navigate('/ranking')}>
               랭킹 확인하러가기
             </button>
             <button className={`home-btn ${difficulty}`} onClick={restart}>
